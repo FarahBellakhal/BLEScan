@@ -1,0 +1,6 @@
+module Bluejay {
+  umbrella header "Bluejay-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04DCC8B89CF328BD274E853ACB2F285D /* Bluejay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57E82B64AA8DAE43B7DDADED214EC4 /* Bluejay.swift */; };
+		085E4DE70822226986BF0C9A90314F23 /* LogObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A57F4958B477DD7CCC298734F95AA8D /* LogObserver.swift */; };
+		0DFD61B24F93FD2159247C53C5167165 /* PeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D9B2F972198ABC9CFB479511F0D5B /* PeripheralDelegate.swift */; };
+		0F4A507DB15DBD2B07091728602F3C86 /* ScanDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B452C21BE41FAB286211341D008239 /* ScanDiscovery.swift */; };
+		0FD33CF478F198B7D3FF0E0DD43F4FE2 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873AB69CC08DC2CC4340205C518CF61 /* Operation.swift */; };
+		116F3B20AAD27E624AF2C6D799EF8C2E /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA01E0DEFB93F2A11A83A1DB216FEDA3 /* Scan.swift */; };
+		117076D36EEF7C52EAF0CAD6BB650FE6 /* ConnectionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383C54C50FDB4984E592CA791F9B8B80 /* ConnectionResult.swift */; };
+		181455469829838590EDECBCC85568FC /* ServiceObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714592359135076E383BB4D90E30120 /* ServiceObserver.swift */; };
+		1BD00813FFC8A85C70C4FB1B3F02B1A3 /* ListenRestorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749ECD0714E65204B7EB3B62E4184B28 /* ListenRestorer.swift */; };
+		1C98CD6BF2409648606B4E52FDF4AB2D /* WarningOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9996DCA91C5199B2FD8BE25136743FA1 /* WarningOptions.swift */; };
+		1CB119E2A86F47571A86635D13831CEC /* DataPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19AD6852BCF49137B92C98C95B7C73C /* DataPadding.swift */; };
+		1CD123AE35F0553B47F3A8B07B545613 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5425E8CD80A22F194145F08C2A70540 /* Connection.swift */; };
+		1EA692EDBA9F410C592992F3B3ED7F70 /* CBPeripheral+FindService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6A2F62CC8A96444753816E230E7A5A /* CBPeripheral+FindService.swift */; };
+		1EB75F270A1E36FB3642BEF4CB126D29 /* CBManagerState+ReturnString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC09A115AD4004CA61E0AFAD1C85FF0 /* CBManagerState+ReturnString.swift */; };
+		1F7D55703C15BF4525201AE58B478DA0 /* Sendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2121475E12BE883F9138B34FA357EACA /* Sendable.swift */; };
+		2FA677C1886EAEB4AE9D0C94D4778B26 /* CBPeripheralState+ReturnString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C459CFE26CD0A195C08C308DD49B5F8 /* CBPeripheralState+ReturnString.swift */; };
+		2FD6479010A46638C398181297CCE9FA /* ListenCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD8FA5D4949784AEFF477F78E0A9DAF /* ListenCallback.swift */; };
+		2FFAB36FC3F9DA267C1D587E56AC92BC /* WriteCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE0A7C735BB1CC6DD4D6CC5452FD5E7 /* WriteCharacteristic.swift */; };
+		3718E6768BD28AD663B0FEF444EDBEC1 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDB235B7F0CA8E7AF81BE5A6081B7CD /* Error.swift */; };
+		3F4EE6F2128D6BBDAE1BE4389A874A14 /* Bluejay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA305B6B3DBCADEF7CC51D670C5502B /* Bluejay-dummy.m */; };
+		44D46D5B6F981C6DA680B416D771A95E /* DiscoverCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6402D3F35D377AF40BAE14886F7DE7 /* DiscoverCharacteristic.swift */; };
+		4795B12403305EA096EAB03F6264B573 /* Peripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA973CC77C66E97A4432C41ADD34CD6 /* Peripheral.swift */; };
+		48E44EF01093E1A088DEDBCD9FAFD3FB /* Data+Extractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84519D17934A3AA44F2A1079A7F46F8 /* Data+Extractable.swift */; };
+		4E24B323C6A0C98811CEFA85F6785772 /* WriteResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C70A181BF7F397A9A12756886BD719 /* WriteResult.swift */; };
+		5A397869959F63A11A792D375FFC279A /* Receivable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2CA472A430B5567FAB27F17C49B6CF /* Receivable.swift */; };
+		5DA6A24F3074BD59D766381888610D24 /* CharacteristicIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E680C33F26B770CDF2D4B846D13E6 /* CharacteristicIdentifier.swift */; };
+		644F40828EF22A17BD17100E644CF74F /* ListenCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5313C46AB8E9CA374F28F248910FBE /* ListenCharacteristic.swift */; };
+		6AC25B47576CEB06F7AE5CD08E39656D /* ConnectionObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4126FCA439E8EB94B9706D0350C7C42B /* ConnectionObserver.swift */; };
+		6D1C4B0BE1D74A7E60E9CAD9669D17B7 /* Queueable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109CEAEE70E8ACC5DFCE82CD54C1F9BA /* Queueable.swift */; };
+		6E42CFBD8EB67A10DE280E7566D01533 /* Data+Sendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787297A531273AB71216549EDAF657D /* Data+Sendable.swift */; };
+		77F6C5820E17F5B83E2C035D1C81DA75 /* ListenAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE10003E5B0E11900C1588663F3AB09B /* ListenAction.swift */; };
+		79753D3A2010719DC60F3AC6C798A5FF /* DiscoverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFBE7D3828FD0AE188F71280480D12F /* DiscoverService.swift */; };
+		7D98F7791564D2B7513070508360F2A6 /* ServiceIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA2B31CD139B0BC4704A5857A7EEA4F /* ServiceIdentifier.swift */; };
+		81623EAFCBF2C81D1FA1709B120F9D09 /* MultipleListenOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2FD0F23A6FC954DA3CAD869DA5524E /* MultipleListenOption.swift */; };
+		8B52437F689DF7F90A164A339D584D18 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652688AFB644BA21AB9C8468E4973C2 /* Event.swift */; };
+		8F89B30319F81D15D017F4E9A3544E85 /* RSSIObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841276FDF86338D39D2E94EDC6837283 /* RSSIObserver.swift */; };
+		93956D43D0A9E70C400A883C5975F401 /* ReadResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081A3CB3B906875C1FF520B0A62119A9 /* ReadResult.swift */; };
+		971BB3F5DACF645C4CA48222E3F7252F /* StartOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43D90AED4A0205C30B7BE59339C672C /* StartOptions.swift */; };
+		A879952A8BD3137FF652E27189B04F5E /* String+Transferable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A671307F0FC439CE121502503B5DD1A /* String+Transferable.swift */; };
+		AE9EE60963596B53D81A8B33105A35AF /* BackgroundRestoreMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC253ABBC9B5E81A9F839C968ABFDF /* BackgroundRestoreMode.swift */; };
+		B6F8C349848376CECCC0DA05C02DAFDD /* Pods-BLEScan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6ACCCD9CF7B907796609109A0FA0B33 /* Pods-BLEScan-dummy.m */; };
+		B757765BCA87FA9A2C33557D67F35CE7 /* Pods-BLEScan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBB8DF43F170FD541F8DA3C9C4FB81D /* Pods-BLEScan-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BAB3718003BCF8D3ADC54BA9A6202AF9 /* PeripheralIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DE1756841376F23A2D4B91A41B8DA2 /* PeripheralIdentifier.swift */; };
+		BB1725C8C9BDC840D0C4116F7BD0687E /* DisconnectionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C955564D87D12CB8FF7CA483046DDE5 /* DisconnectionResult.swift */; };
+		BD55739332465E6093FCA8CAA15E9862 /* DiscoveryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EDF8F09A70DFD67E38DDBD69F98B2 /* DiscoveryResult.swift */; };
+		BD9B4E640CCF5DE9E73923DB75EE6C03 /* Bluejay.h in Headers */ = {isa = PBXBuildFile; fileRef = BBCCA730313218216A822FB8AEA92558 /* Bluejay.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C42450967972EE28017188743D5ACCAE /* Integer+Transferable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA50053D90E7FFDF42973C977D78C62 /* Integer+Transferable.swift */; };
+		C4A32CA09C55FB6E2CA68FD3099A9B9F /* ScanAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D5EC8C29905E7BED7FBADBB8ED3A /* ScanAction.swift */; };
+		D19F8C512AF56303DE82F9AD986CE879 /* SynchronizedPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD0D37F31FBB3D6F5EF3A53217B6577 /* SynchronizedPeripheral.swift */; };
+		D1A53FA9BE70B7B8CDA84A8DB72A5A66 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAE3CE201F03D3716D469E85663D8 /* Queue.swift */; };
+		D831EA2EA6E1A3B02424F2ADC7CED22D /* BackgroundRestorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9438A36FC82906A41D56ADD6202919A /* BackgroundRestorer.swift */; };
+		DCA9A3E0C6D2FDA87EFFC5840307F403 /* CBService+FindCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C558EB1A7B53758AD979BFB2BA1D4081 /* CBService+FindCharacteristic.swift */; };
+		E1BA5D18A9A5E7B386777195D8470186 /* ReadCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B54E27B18D68A3E08A72AA35A56809 /* ReadCharacteristic.swift */; };
+		ECD1F33A065ECA629885EA9B5FD2DAB2 /* Bluejay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC862BACD520BC36EDCE84CA12CD3CCA /* Bluejay-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ECD2BB5BE6CD0ED997C3A108BE951DD7 /* DisconnectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63DF0812E27FF1F7C81B64FD7D1757B /* DisconnectHandler.swift */; };
+		F4B97D758B174C6601BA67E28FBF1F7B /* RunResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDAE1AAAFB2A200A35F5BD4011C24D0 /* RunResult.swift */; };
+		F5C5DD5181776243FCA2A65EF3D90BFF /* QueueableState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52A3F33C92D2296B86447B3D4DDCF22 /* QueueableState.swift */; };
+		FCEF377D24CC062851A175D6AD4082B5 /* Disconnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E393FF389BEB88266BAC448ECC6812 /* Disconnection.swift */; };
+		FD28A556E7DC2E1B5D0A9B8F790E0BE6 /* BackgroundRestoreConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA8B3D59717A14317B9137A10A67957 /* BackgroundRestoreConfig.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1485565EA39DDDEF83FF2DB1087AB918 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70FD806199C6E6A591650EBECE9E7ED6;
+			remoteInfo = Bluejay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		081A3CB3B906875C1FF520B0A62119A9 /* ReadResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReadResult.swift; path = Bluejay/Bluejay/ReadResult.swift; sourceTree = "<group>"; };
+		0A671307F0FC439CE121502503B5DD1A /* String+Transferable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Transferable.swift"; path = "Bluejay/Bluejay/String+Transferable.swift"; sourceTree = "<group>"; };
+		0F57E82B64AA8DAE43B7DDADED214EC4 /* Bluejay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bluejay.swift; path = Bluejay/Bluejay/Bluejay.swift; sourceTree = "<group>"; };
+		104D9B2F972198ABC9CFB479511F0D5B /* PeripheralDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeripheralDelegate.swift; path = Bluejay/Bluejay/PeripheralDelegate.swift; sourceTree = "<group>"; };
+		109CEAEE70E8ACC5DFCE82CD54C1F9BA /* Queueable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Queueable.swift; path = Bluejay/Bluejay/Queueable.swift; sourceTree = "<group>"; };
+		19B52C1C1A7951A45DF4BA513520CC94 /* Pods-BLEScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLEScan.debug.xcconfig"; sourceTree = "<group>"; };
+		2121475E12BE883F9138B34FA357EACA /* Sendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sendable.swift; path = Bluejay/Bluejay/Sendable.swift; sourceTree = "<group>"; };
+		2A2CA472A430B5567FAB27F17C49B6CF /* Receivable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Receivable.swift; path = Bluejay/Bluejay/Receivable.swift; sourceTree = "<group>"; };
+		2AA305B6B3DBCADEF7CC51D670C5502B /* Bluejay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bluejay-dummy.m"; sourceTree = "<group>"; };
+		2CE0A7C735BB1CC6DD4D6CC5452FD5E7 /* WriteCharacteristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriteCharacteristic.swift; path = Bluejay/Bluejay/WriteCharacteristic.swift; sourceTree = "<group>"; };
+		35B54E27B18D68A3E08A72AA35A56809 /* ReadCharacteristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReadCharacteristic.swift; path = Bluejay/Bluejay/ReadCharacteristic.swift; sourceTree = "<group>"; };
+		383C54C50FDB4984E592CA791F9B8B80 /* ConnectionResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionResult.swift; path = Bluejay/Bluejay/ConnectionResult.swift; sourceTree = "<group>"; };
+		3CE60EA8DC9507635E22878E5956B167 /* Pods-BLEScan-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLEScan-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4126FCA439E8EB94B9706D0350C7C42B /* ConnectionObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionObserver.swift; path = Bluejay/Bluejay/ConnectionObserver.swift; sourceTree = "<group>"; };
+		417EDF8F09A70DFD67E38DDBD69F98B2 /* DiscoveryResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiscoveryResult.swift; path = Bluejay/Bluejay/DiscoveryResult.swift; sourceTree = "<group>"; };
+		45BA6D14585F787711D50FBB22C95595 /* Pods-BLEScan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BLEScan.modulemap"; sourceTree = "<group>"; };
+		49477BCF85FC327778954C1C21B36E7C /* Bluejay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bluejay-prefix.pch"; sourceTree = "<group>"; };
+		4C6A2F62CC8A96444753816E230E7A5A /* CBPeripheral+FindService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CBPeripheral+FindService.swift"; path = "Bluejay/Bluejay/CBPeripheral+FindService.swift"; sourceTree = "<group>"; };
+		56B452C21BE41FAB286211341D008239 /* ScanDiscovery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScanDiscovery.swift; path = Bluejay/Bluejay/ScanDiscovery.swift; sourceTree = "<group>"; };
+		582BFE69C72D1AD573B5CD631D7A10FA /* Pods-BLEScan-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLEScan-acknowledgements.plist"; sourceTree = "<group>"; };
+		5A5313C46AB8E9CA374F28F248910FBE /* ListenCharacteristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListenCharacteristic.swift; path = Bluejay/Bluejay/ListenCharacteristic.swift; sourceTree = "<group>"; };
+		5C955564D87D12CB8FF7CA483046DDE5 /* DisconnectionResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisconnectionResult.swift; path = Bluejay/Bluejay/DisconnectionResult.swift; sourceTree = "<group>"; };
+		6DB22D87DEB4D2200BC804569ECD5CB5 /* Pods-BLEScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLEScan.release.xcconfig"; sourceTree = "<group>"; };
+		6DD8FA5D4949784AEFF477F78E0A9DAF /* ListenCallback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListenCallback.swift; path = Bluejay/Bluejay/ListenCallback.swift; sourceTree = "<group>"; };
+		73E393FF389BEB88266BAC448ECC6812 /* Disconnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disconnection.swift; path = Bluejay/Bluejay/Disconnection.swift; sourceTree = "<group>"; };
+		749ECD0714E65204B7EB3B62E4184B28 /* ListenRestorer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListenRestorer.swift; path = Bluejay/Bluejay/ListenRestorer.swift; sourceTree = "<group>"; };
+		7787297A531273AB71216549EDAF657D /* Data+Sendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Sendable.swift"; path = "Bluejay/Bluejay/Data+Sendable.swift"; sourceTree = "<group>"; };
+		7A57F4958B477DD7CCC298734F95AA8D /* LogObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogObserver.swift; path = Bluejay/Bluejay/LogObserver.swift; sourceTree = "<group>"; };
+		7BDB235B7F0CA8E7AF81BE5A6081B7CD /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Bluejay/Bluejay/Error.swift; sourceTree = "<group>"; };
+		841276FDF86338D39D2E94EDC6837283 /* RSSIObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSIObserver.swift; path = Bluejay/Bluejay/RSSIObserver.swift; sourceTree = "<group>"; };
+		851C41B0BF0EA9A4FCA57661209A739E /* Bluejay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bluejay.debug.xcconfig; sourceTree = "<group>"; };
+		8714592359135076E383BB4D90E30120 /* ServiceObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceObserver.swift; path = Bluejay/Bluejay/ServiceObserver.swift; sourceTree = "<group>"; };
+		8C459CFE26CD0A195C08C308DD49B5F8 /* CBPeripheralState+ReturnString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CBPeripheralState+ReturnString.swift"; path = "Bluejay/Bluejay/CBPeripheralState+ReturnString.swift"; sourceTree = "<group>"; };
+		8EA2B31CD139B0BC4704A5857A7EEA4F /* ServiceIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceIdentifier.swift; path = Bluejay/Bluejay/ServiceIdentifier.swift; sourceTree = "<group>"; };
+		96DE1756841376F23A2D4B91A41B8DA2 /* PeripheralIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeripheralIdentifier.swift; path = Bluejay/Bluejay/PeripheralIdentifier.swift; sourceTree = "<group>"; };
+		9996DCA91C5199B2FD8BE25136743FA1 /* WarningOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WarningOptions.swift; path = Bluejay/Bluejay/WarningOptions.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DD0D37F31FBB3D6F5EF3A53217B6577 /* SynchronizedPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedPeripheral.swift; path = Bluejay/Bluejay/SynchronizedPeripheral.swift; sourceTree = "<group>"; };
+		A5ED9010A1212B3243E38D40F837E335 /* Pods-BLEScan */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-BLEScan"; path = "libPods-BLEScan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE74105B2194C867254270EE3E0488B /* Bluejay */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = Bluejay; path = libBluejay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52A3F33C92D2296B86447B3D4DDCF22 /* QueueableState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueueableState.swift; path = Bluejay/Bluejay/QueueableState.swift; sourceTree = "<group>"; };
+		B5AC253ABBC9B5E81A9F839C968ABFDF /* BackgroundRestoreMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundRestoreMode.swift; path = Bluejay/Bluejay/BackgroundRestoreMode.swift; sourceTree = "<group>"; };
+		B66AA47663721CBAB6F53FCE79F588C1 /* Bluejay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Bluejay.modulemap; sourceTree = "<group>"; };
+		B873AB69CC08DC2CC4340205C518CF61 /* Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operation.swift; path = Bluejay/Bluejay/Operation.swift; sourceTree = "<group>"; };
+		BAFBE7D3828FD0AE188F71280480D12F /* DiscoverService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiscoverService.swift; path = Bluejay/Bluejay/DiscoverService.swift; sourceTree = "<group>"; };
+		BB2FD0F23A6FC954DA3CAD869DA5524E /* MultipleListenOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleListenOption.swift; path = Bluejay/Bluejay/MultipleListenOption.swift; sourceTree = "<group>"; };
+		BBCCA730313218216A822FB8AEA92558 /* Bluejay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bluejay.h; path = Bluejay/Bluejay/Bluejay.h; sourceTree = "<group>"; };
+		BCC09A115AD4004CA61E0AFAD1C85FF0 /* CBManagerState+ReturnString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CBManagerState+ReturnString.swift"; path = "Bluejay/Bluejay/CBManagerState+ReturnString.swift"; sourceTree = "<group>"; };
+		BDA8B3D59717A14317B9137A10A67957 /* BackgroundRestoreConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundRestoreConfig.swift; path = Bluejay/Bluejay/BackgroundRestoreConfig.swift; sourceTree = "<group>"; };
+		BE10003E5B0E11900C1588663F3AB09B /* ListenAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListenAction.swift; path = Bluejay/Bluejay/ListenAction.swift; sourceTree = "<group>"; };
+		BFBB8DF43F170FD541F8DA3C9C4FB81D /* Pods-BLEScan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLEScan-umbrella.h"; sourceTree = "<group>"; };
+		C558EB1A7B53758AD979BFB2BA1D4081 /* CBService+FindCharacteristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CBService+FindCharacteristic.swift"; path = "Bluejay/Bluejay/CBService+FindCharacteristic.swift"; sourceTree = "<group>"; };
+		C5C70A181BF7F397A9A12756886BD719 /* WriteResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WriteResult.swift; path = Bluejay/Bluejay/WriteResult.swift; sourceTree = "<group>"; };
+		C652688AFB644BA21AB9C8468E4973C2 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Bluejay/Bluejay/Event.swift; sourceTree = "<group>"; };
+		CAA973CC77C66E97A4432C41ADD34CD6 /* Peripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Peripheral.swift; path = Bluejay/Bluejay/Peripheral.swift; sourceTree = "<group>"; };
+		CC862BACD520BC36EDCE84CA12CD3CCA /* Bluejay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bluejay-umbrella.h"; sourceTree = "<group>"; };
+		D237D5EC8C29905E7BED7FBADBB8ED3A /* ScanAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScanAction.swift; path = Bluejay/Bluejay/ScanAction.swift; sourceTree = "<group>"; };
+		D26AF7BE7DF4D92D8BE9D0F1C24A6B6A /* Bluejay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bluejay.release.xcconfig; sourceTree = "<group>"; };
+		D5425E8CD80A22F194145F08C2A70540 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Bluejay/Bluejay/Connection.swift; sourceTree = "<group>"; };
+		D6ACCCD9CF7B907796609109A0FA0B33 /* Pods-BLEScan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLEScan-dummy.m"; sourceTree = "<group>"; };
+		D75E680C33F26B770CDF2D4B846D13E6 /* CharacteristicIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacteristicIdentifier.swift; path = Bluejay/Bluejay/CharacteristicIdentifier.swift; sourceTree = "<group>"; };
+		D84519D17934A3AA44F2A1079A7F46F8 /* Data+Extractable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extractable.swift"; path = "Bluejay/Bluejay/Data+Extractable.swift"; sourceTree = "<group>"; };
+		D9438A36FC82906A41D56ADD6202919A /* BackgroundRestorer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundRestorer.swift; path = Bluejay/Bluejay/BackgroundRestorer.swift; sourceTree = "<group>"; };
+		E63DF0812E27FF1F7C81B64FD7D1757B /* DisconnectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisconnectHandler.swift; path = Bluejay/Bluejay/DisconnectHandler.swift; sourceTree = "<group>"; };
+		EA01E0DEFB93F2A11A83A1DB216FEDA3 /* Scan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scan.swift; path = Bluejay/Bluejay/Scan.swift; sourceTree = "<group>"; };
+		EA6402D3F35D377AF40BAE14886F7DE7 /* DiscoverCharacteristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiscoverCharacteristic.swift; path = Bluejay/Bluejay/DiscoverCharacteristic.swift; sourceTree = "<group>"; };
+		F13DAE3CE201F03D3716D469E85663D8 /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = Bluejay/Bluejay/Queue.swift; sourceTree = "<group>"; };
+		F19AD6852BCF49137B92C98C95B7C73C /* DataPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataPadding.swift; path = Bluejay/Bluejay/DataPadding.swift; sourceTree = "<group>"; };
+		F43D90AED4A0205C30B7BE59339C672C /* StartOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StartOptions.swift; path = Bluejay/Bluejay/StartOptions.swift; sourceTree = "<group>"; };
+		FDDAE1AAAFB2A200A35F5BD4011C24D0 /* RunResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RunResult.swift; path = Bluejay/Bluejay/RunResult.swift; sourceTree = "<group>"; };
+		FEA50053D90E7FFDF42973C977D78C62 /* Integer+Transferable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Integer+Transferable.swift"; path = "Bluejay/Bluejay/Integer+Transferable.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16963116B7AB46E6C869F5CF0686CB16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2FEB05E914E7F29A150CD87A9D0078D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4020E94BF48226EF90E0A4C97B9AF6CD /* Bluejay */ = {
+			isa = PBXGroup;
+			children = (
+				BDA8B3D59717A14317B9137A10A67957 /* BackgroundRestoreConfig.swift */,
+				B5AC253ABBC9B5E81A9F839C968ABFDF /* BackgroundRestoreMode.swift */,
+				D9438A36FC82906A41D56ADD6202919A /* BackgroundRestorer.swift */,
+				BBCCA730313218216A822FB8AEA92558 /* Bluejay.h */,
+				0F57E82B64AA8DAE43B7DDADED214EC4 /* Bluejay.swift */,
+				BCC09A115AD4004CA61E0AFAD1C85FF0 /* CBManagerState+ReturnString.swift */,
+				4C6A2F62CC8A96444753816E230E7A5A /* CBPeripheral+FindService.swift */,
+				8C459CFE26CD0A195C08C308DD49B5F8 /* CBPeripheralState+ReturnString.swift */,
+				C558EB1A7B53758AD979BFB2BA1D4081 /* CBService+FindCharacteristic.swift */,
+				D75E680C33F26B770CDF2D4B846D13E6 /* CharacteristicIdentifier.swift */,
+				D5425E8CD80A22F194145F08C2A70540 /* Connection.swift */,
+				4126FCA439E8EB94B9706D0350C7C42B /* ConnectionObserver.swift */,
+				383C54C50FDB4984E592CA791F9B8B80 /* ConnectionResult.swift */,
+				D84519D17934A3AA44F2A1079A7F46F8 /* Data+Extractable.swift */,
+				7787297A531273AB71216549EDAF657D /* Data+Sendable.swift */,
+				F19AD6852BCF49137B92C98C95B7C73C /* DataPadding.swift */,
+				E63DF0812E27FF1F7C81B64FD7D1757B /* DisconnectHandler.swift */,
+				73E393FF389BEB88266BAC448ECC6812 /* Disconnection.swift */,
+				5C955564D87D12CB8FF7CA483046DDE5 /* DisconnectionResult.swift */,
+				EA6402D3F35D377AF40BAE14886F7DE7 /* DiscoverCharacteristic.swift */,
+				BAFBE7D3828FD0AE188F71280480D12F /* DiscoverService.swift */,
+				417EDF8F09A70DFD67E38DDBD69F98B2 /* DiscoveryResult.swift */,
+				7BDB235B7F0CA8E7AF81BE5A6081B7CD /* Error.swift */,
+				C652688AFB644BA21AB9C8468E4973C2 /* Event.swift */,
+				FEA50053D90E7FFDF42973C977D78C62 /* Integer+Transferable.swift */,
+				BE10003E5B0E11900C1588663F3AB09B /* ListenAction.swift */,
+				6DD8FA5D4949784AEFF477F78E0A9DAF /* ListenCallback.swift */,
+				5A5313C46AB8E9CA374F28F248910FBE /* ListenCharacteristic.swift */,
+				749ECD0714E65204B7EB3B62E4184B28 /* ListenRestorer.swift */,
+				7A57F4958B477DD7CCC298734F95AA8D /* LogObserver.swift */,
+				BB2FD0F23A6FC954DA3CAD869DA5524E /* MultipleListenOption.swift */,
+				B873AB69CC08DC2CC4340205C518CF61 /* Operation.swift */,
+				CAA973CC77C66E97A4432C41ADD34CD6 /* Peripheral.swift */,
+				104D9B2F972198ABC9CFB479511F0D5B /* PeripheralDelegate.swift */,
+				96DE1756841376F23A2D4B91A41B8DA2 /* PeripheralIdentifier.swift */,
+				F13DAE3CE201F03D3716D469E85663D8 /* Queue.swift */,
+				109CEAEE70E8ACC5DFCE82CD54C1F9BA /* Queueable.swift */,
+				B52A3F33C92D2296B86447B3D4DDCF22 /* QueueableState.swift */,
+				35B54E27B18D68A3E08A72AA35A56809 /* ReadCharacteristic.swift */,
+				081A3CB3B906875C1FF520B0A62119A9 /* ReadResult.swift */,
+				2A2CA472A430B5567FAB27F17C49B6CF /* Receivable.swift */,
+				841276FDF86338D39D2E94EDC6837283 /* RSSIObserver.swift */,
+				FDDAE1AAAFB2A200A35F5BD4011C24D0 /* RunResult.swift */,
+				EA01E0DEFB93F2A11A83A1DB216FEDA3 /* Scan.swift */,
+				D237D5EC8C29905E7BED7FBADBB8ED3A /* ScanAction.swift */,
+				56B452C21BE41FAB286211341D008239 /* ScanDiscovery.swift */,
+				2121475E12BE883F9138B34FA357EACA /* Sendable.swift */,
+				8EA2B31CD139B0BC4704A5857A7EEA4F /* ServiceIdentifier.swift */,
+				8714592359135076E383BB4D90E30120 /* ServiceObserver.swift */,
+				F43D90AED4A0205C30B7BE59339C672C /* StartOptions.swift */,
+				0A671307F0FC439CE121502503B5DD1A /* String+Transferable.swift */,
+				9DD0D37F31FBB3D6F5EF3A53217B6577 /* SynchronizedPeripheral.swift */,
+				9996DCA91C5199B2FD8BE25136743FA1 /* WarningOptions.swift */,
+				2CE0A7C735BB1CC6DD4D6CC5452FD5E7 /* WriteCharacteristic.swift */,
+				C5C70A181BF7F397A9A12756886BD719 /* WriteResult.swift */,
+				A41F0A554423B20AF46AEFA5BE379205 /* Support Files */,
+			);
+			name = Bluejay;
+			path = Bluejay;
+			sourceTree = "<group>";
+		};
+		589C856B47634F06868D417E6DEAF028 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABE74105B2194C867254270EE3E0488B /* Bluejay */,
+				A5ED9010A1212B3243E38D40F837E335 /* Pods-BLEScan */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8244217CB4D9F8988268DE3068818AA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4020E94BF48226EF90E0A4C97B9AF6CD /* Bluejay */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A41F0A554423B20AF46AEFA5BE379205 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B66AA47663721CBAB6F53FCE79F588C1 /* Bluejay.modulemap */,
+				2AA305B6B3DBCADEF7CC51D670C5502B /* Bluejay-dummy.m */,
+				49477BCF85FC327778954C1C21B36E7C /* Bluejay-prefix.pch */,
+				CC862BACD520BC36EDCE84CA12CD3CCA /* Bluejay-umbrella.h */,
+				851C41B0BF0EA9A4FCA57661209A739E /* Bluejay.debug.xcconfig */,
+				D26AF7BE7DF4D92D8BE9D0F1C24A6B6A /* Bluejay.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Bluejay";
+			sourceTree = "<group>";
+		};
+		C2ACF81891A6688ADF30CB72833542F8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E37341CA61F3C949C35E1A634374D129 /* Pods-BLEScan */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				8244217CB4D9F8988268DE3068818AA8 /* Pods */,
+				589C856B47634F06868D417E6DEAF028 /* Products */,
+				C2ACF81891A6688ADF30CB72833542F8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E37341CA61F3C949C35E1A634374D129 /* Pods-BLEScan */ = {
+			isa = PBXGroup;
+			children = (
+				45BA6D14585F787711D50FBB22C95595 /* Pods-BLEScan.modulemap */,
+				3CE60EA8DC9507635E22878E5956B167 /* Pods-BLEScan-acknowledgements.markdown */,
+				582BFE69C72D1AD573B5CD631D7A10FA /* Pods-BLEScan-acknowledgements.plist */,
+				D6ACCCD9CF7B907796609109A0FA0B33 /* Pods-BLEScan-dummy.m */,
+				BFBB8DF43F170FD541F8DA3C9C4FB81D /* Pods-BLEScan-umbrella.h */,
+				19B52C1C1A7951A45DF4BA513520CC94 /* Pods-BLEScan.debug.xcconfig */,
+				6DB22D87DEB4D2200BC804569ECD5CB5 /* Pods-BLEScan.release.xcconfig */,
+			);
+			name = "Pods-BLEScan";
+			path = "Target Support Files/Pods-BLEScan";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7B0E3B7D75F5DCC1F507C8AFD0DBE05C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B757765BCA87FA9A2C33557D67F35CE7 /* Pods-BLEScan-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E74B0A00FEC2D0513045514F660EFB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9B4E640CCF5DE9E73923DB75EE6C03 /* Bluejay.h in Headers */,
+				ECD1F33A065ECA629885EA9B5FD2DAB2 /* Bluejay-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5F143DAD8A1D69E4CA8D018180967566 /* Pods-BLEScan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE99B0F335566122A3B87A5499BD640B /* Build configuration list for PBXNativeTarget "Pods-BLEScan" */;
+			buildPhases = (
+				7B0E3B7D75F5DCC1F507C8AFD0DBE05C /* Headers */,
+				CC00AF13FF851DB7AE00B53D58C3BA82 /* Sources */,
+				16963116B7AB46E6C869F5CF0686CB16 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D928D1EE27BEB50B63521F178EC09F5 /* PBXTargetDependency */,
+			);
+			name = "Pods-BLEScan";
+			productName = "Pods-BLEScan";
+			productReference = A5ED9010A1212B3243E38D40F837E335 /* Pods-BLEScan */;
+			productType = "com.apple.product-type.library.static";
+		};
+		70FD806199C6E6A591650EBECE9E7ED6 /* Bluejay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4179592841EEA199F5C0C6E8410C4097 /* Build configuration list for PBXNativeTarget "Bluejay" */;
+			buildPhases = (
+				8E74B0A00FEC2D0513045514F660EFB2 /* Headers */,
+				75C84E2039F9F5ED5DD35AA96DCDEAFE /* Sources */,
+				B2FEB05E914E7F29A150CD87A9D0078D /* Frameworks */,
+				BC5A479F31CFD5425E9152C10DB56F12 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bluejay;
+			productName = Bluejay;
+			productReference = ABE74105B2194C867254270EE3E0488B /* Bluejay */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 589C856B47634F06868D417E6DEAF028 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70FD806199C6E6A591650EBECE9E7ED6 /* Bluejay */,
+				5F143DAD8A1D69E4CA8D018180967566 /* Pods-BLEScan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC5A479F31CFD5425E9152C10DB56F12 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Bluejay/Bluejay.modulemap",
+				"${PODS_ROOT}/Headers/Public/Bluejay/Bluejay-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/Bluejay-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Bluejay/Bluejay.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Bluejay/Bluejay-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75C84E2039F9F5ED5DD35AA96DCDEAFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD28A556E7DC2E1B5D0A9B8F790E0BE6 /* BackgroundRestoreConfig.swift in Sources */,
+				AE9EE60963596B53D81A8B33105A35AF /* BackgroundRestoreMode.swift in Sources */,
+				D831EA2EA6E1A3B02424F2ADC7CED22D /* BackgroundRestorer.swift in Sources */,
+				04DCC8B89CF328BD274E853ACB2F285D /* Bluejay.swift in Sources */,
+				3F4EE6F2128D6BBDAE1BE4389A874A14 /* Bluejay-dummy.m in Sources */,
+				1EB75F270A1E36FB3642BEF4CB126D29 /* CBManagerState+ReturnString.swift in Sources */,
+				1EA692EDBA9F410C592992F3B3ED7F70 /* CBPeripheral+FindService.swift in Sources */,
+				2FA677C1886EAEB4AE9D0C94D4778B26 /* CBPeripheralState+ReturnString.swift in Sources */,
+				DCA9A3E0C6D2FDA87EFFC5840307F403 /* CBService+FindCharacteristic.swift in Sources */,
+				5DA6A24F3074BD59D766381888610D24 /* CharacteristicIdentifier.swift in Sources */,
+				1CD123AE35F0553B47F3A8B07B545613 /* Connection.swift in Sources */,
+				6AC25B47576CEB06F7AE5CD08E39656D /* ConnectionObserver.swift in Sources */,
+				117076D36EEF7C52EAF0CAD6BB650FE6 /* ConnectionResult.swift in Sources */,
+				48E44EF01093E1A088DEDBCD9FAFD3FB /* Data+Extractable.swift in Sources */,
+				6E42CFBD8EB67A10DE280E7566D01533 /* Data+Sendable.swift in Sources */,
+				1CB119E2A86F47571A86635D13831CEC /* DataPadding.swift in Sources */,
+				ECD2BB5BE6CD0ED997C3A108BE951DD7 /* DisconnectHandler.swift in Sources */,
+				FCEF377D24CC062851A175D6AD4082B5 /* Disconnection.swift in Sources */,
+				BB1725C8C9BDC840D0C4116F7BD0687E /* DisconnectionResult.swift in Sources */,
+				44D46D5B6F981C6DA680B416D771A95E /* DiscoverCharacteristic.swift in Sources */,
+				79753D3A2010719DC60F3AC6C798A5FF /* DiscoverService.swift in Sources */,
+				BD55739332465E6093FCA8CAA15E9862 /* DiscoveryResult.swift in Sources */,
+				3718E6768BD28AD663B0FEF444EDBEC1 /* Error.swift in Sources */,
+				8B52437F689DF7F90A164A339D584D18 /* Event.swift in Sources */,
+				C42450967972EE28017188743D5ACCAE /* Integer+Transferable.swift in Sources */,
+				77F6C5820E17F5B83E2C035D1C81DA75 /* ListenAction.swift in Sources */,
+				2FD6479010A46638C398181297CCE9FA /* ListenCallback.swift in Sources */,
+				644F40828EF22A17BD17100E644CF74F /* ListenCharacteristic.swift in Sources */,
+				1BD00813FFC8A85C70C4FB1B3F02B1A3 /* ListenRestorer.swift in Sources */,
+				085E4DE70822226986BF0C9A90314F23 /* LogObserver.swift in Sources */,
+				81623EAFCBF2C81D1FA1709B120F9D09 /* MultipleListenOption.swift in Sources */,
+				0FD33CF478F198B7D3FF0E0DD43F4FE2 /* Operation.swift in Sources */,
+				4795B12403305EA096EAB03F6264B573 /* Peripheral.swift in Sources */,
+				0DFD61B24F93FD2159247C53C5167165 /* PeripheralDelegate.swift in Sources */,
+				BAB3718003BCF8D3ADC54BA9A6202AF9 /* PeripheralIdentifier.swift in Sources */,
+				D1A53FA9BE70B7B8CDA84A8DB72A5A66 /* Queue.swift in Sources */,
+				6D1C4B0BE1D74A7E60E9CAD9669D17B7 /* Queueable.swift in Sources */,
+				F5C5DD5181776243FCA2A65EF3D90BFF /* QueueableState.swift in Sources */,
+				E1BA5D18A9A5E7B386777195D8470186 /* ReadCharacteristic.swift in Sources */,
+				93956D43D0A9E70C400A883C5975F401 /* ReadResult.swift in Sources */,
+				5A397869959F63A11A792D375FFC279A /* Receivable.swift in Sources */,
+				8F89B30319F81D15D017F4E9A3544E85 /* RSSIObserver.swift in Sources */,
+				F4B97D758B174C6601BA67E28FBF1F7B /* RunResult.swift in Sources */,
+				116F3B20AAD27E624AF2C6D799EF8C2E /* Scan.swift in Sources */,
+				C4A32CA09C55FB6E2CA68FD3099A9B9F /* ScanAction.swift in Sources */,
+				0F4A507DB15DBD2B07091728602F3C86 /* ScanDiscovery.swift in Sources */,
+				1F7D55703C15BF4525201AE58B478DA0 /* Sendable.swift in Sources */,
+				7D98F7791564D2B7513070508360F2A6 /* ServiceIdentifier.swift in Sources */,
+				181455469829838590EDECBCC85568FC /* ServiceObserver.swift in Sources */,
+				971BB3F5DACF645C4CA48222E3F7252F /* StartOptions.swift in Sources */,
+				A879952A8BD3137FF652E27189B04F5E /* String+Transferable.swift in Sources */,
+				D19F8C512AF56303DE82F9AD986CE879 /* SynchronizedPeripheral.swift in Sources */,
+				1C98CD6BF2409648606B4E52FDF4AB2D /* WarningOptions.swift in Sources */,
+				2FFAB36FC3F9DA267C1D587E56AC92BC /* WriteCharacteristic.swift in Sources */,
+				4E24B323C6A0C98811CEFA85F6785772 /* WriteResult.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC00AF13FF851DB7AE00B53D58C3BA82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F8C349848376CECCC0DA05C02DAFDD /* Pods-BLEScan-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D928D1EE27BEB50B63521F178EC09F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Bluejay;
+			target = 70FD806199C6E6A591650EBECE9E7ED6 /* Bluejay */;
+			targetProxy = 1485565EA39DDDEF83FF2DB1087AB918 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3CEE07FDF9BA68882863195EE5530415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 851C41B0BF0EA9A4FCA57661209A739E /* Bluejay.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Bluejay/Bluejay-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MODULEMAP_FILE = Headers/Public/Bluejay/Bluejay.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Bluejay;
+				PRODUCT_NAME = Bluejay;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53F8CAFA65D6EE5AEFDCF1D6596B35B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D26AF7BE7DF4D92D8BE9D0F1C24A6B6A /* Bluejay.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Bluejay/Bluejay-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MODULEMAP_FILE = Headers/Public/Bluejay/Bluejay.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Bluejay;
+				PRODUCT_NAME = Bluejay;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92486E5E72E54FAF60E1A7D022C21B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		934ED2B84836A780113D1F63484628B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D7A1B9C800E5516C74FE68762457EE89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19B52C1C1A7951A45DF4BA513520CC94 /* Pods-BLEScan.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BLEScan/Pods-BLEScan.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6F94042C7CAEA6BB5BF92F373DD43FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DB22D87DEB4D2200BC804569ECD5CB5 /* Pods-BLEScan.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BLEScan/Pods-BLEScan.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4179592841EEA199F5C0C6E8410C4097 /* Build configuration list for PBXNativeTarget "Bluejay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEE07FDF9BA68882863195EE5530415 /* Debug */,
+				53F8CAFA65D6EE5AEFDCF1D6596B35B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934ED2B84836A780113D1F63484628B2 /* Debug */,
+				92486E5E72E54FAF60E1A7D022C21B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE99B0F335566122A3B87A5499BD640B /* Build configuration list for PBXNativeTarget "Pods-BLEScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7A1B9C800E5516C74FE68762457EE89 /* Debug */,
+				F6F94042C7CAEA6BB5BF92F373DD43FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
